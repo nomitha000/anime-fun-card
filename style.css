@@ -1,0 +1,57 @@
+body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color:#fff1e6;
+    height: 100vh;
+}
+#card{
+    position: relative;
+    text-align: center;
+    color:#333333;
+    background:#fff7ed;
+    height: 500px;
+    width: 600px;
+    box-shadow: 0 0 20px #ffe0cc;
+    padding: 20px;
+}
+#image{
+    height: 300px;
+    width: 500px;
+    margin: 10px auto;
+    display: block;
+    box-shadow:  0 0 25px #ffe0cc;
+}
+.button{
+    background-color:#ffd6d6;
+    color:#7a2849;
+    border-radius: 6px;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 15px #f8c0c8;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.button:hover {
+   background-color: #ffbaba;
+   color: #7a2849;
+   transform: scale(1.05);
+}
+.btn-row {
+  display: flex;
+  justify-content: space-between; /* study left, anime right */
+  align-items: center;
+  margin-top: 20px;
+  position: relative;
+  height: 60px; /* space for moving button */
+}
+
+#yes {
+  position: absolute; /* free to move */
+  left: 0;
+}
+#no {
+  position: absolute;
+  right: 0; /* fixed on right */
+}
